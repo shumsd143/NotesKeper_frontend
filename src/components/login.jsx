@@ -101,7 +101,7 @@ class Login extends React.Component{
             return (
                 <div className="align">
                     <h1 className="heading">userlogin</h1>
-                    <div className="card">
+                    <div className="carder">
                         <div className="head">
                             <div></div>
                             <a id="login" className="selected" href="#login" onClick={this.tablogin}>Login</a>
@@ -129,7 +129,7 @@ class Login extends React.Component{
             return (
                 <div className="align">
                     <h1 className="heading">userlogin</h1>
-                    <div className="card">
+                    <div className="carder">
                         <div className="head">
                             <div></div>
                             <a id="login" href="#login" onClick={this.tablogin}>Login</a>
