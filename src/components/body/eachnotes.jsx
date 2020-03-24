@@ -57,7 +57,7 @@ class Eachnotes extends React.Component{
                 <Card style={{ width: '20rem' }}>
                     <Card.Img variant="top" src={image} />
                     <input type="checkbox" className="stylecheckbox" checked={checkbox} onClick={this.changecheckbox}/>
-                    <Card.Body>
+                    <Card.Body className="Cardcolor">
                         <Card.Title>{title}</Card.Title>
                         <Card.Text>
                             {text}

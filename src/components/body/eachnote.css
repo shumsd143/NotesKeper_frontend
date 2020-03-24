@@ -8,6 +8,9 @@
     align-items: center;
     margin: auto;
 }
+.Cardcolor{
+    background-color: white;
+}
 .stylecheckbox{
     position: fixed;
     margin-top: -15px;
