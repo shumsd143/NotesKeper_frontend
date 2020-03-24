@@ -24,7 +24,7 @@ class Mainbody extends React.Component{
         })
     }
     fetcher=()=>{
-        fetch('http://localhost:5000/user/data/note/'+this.props.emailpass)
+        fetch('https://noteskeperbackend.herokuapp.com/user/data/note/'+this.props.emailpass)
         .then(res=>res.json())
         .then(json=>{
             this.setState({

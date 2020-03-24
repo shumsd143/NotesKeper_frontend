@@ -8,7 +8,7 @@ class Eachnotes extends React.Component{
         let data=this.props.passeddata
         let imgurl='https://funky802.com/elements/event_calendar/images/no_image.png'
         if(data.image){
-            imgurl="http://localhost:5000/files/"+data.image
+            imgurl="https://noteskeperbackend.herokuapp.com/files/"+data.image
         }
         this.state={
             text:data.text,
@@ -48,7 +48,7 @@ class Eachnotes extends React.Component{
                 title:this.state.title
             }
         }
-        axios.post('http://localhost:5000/user/data/checkbox',body)
+        axios.post('https://noteskeperbackend.herokuapp.com/user/data/checkbox',body)
     }
     render(){
         let {text,title,image,checkbox}=this.state

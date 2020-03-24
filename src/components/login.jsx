@@ -1,6 +1,5 @@
 import React from 'react'
 import './loginstyle.css'
-import {Alert} from 'react-bootstrap'
 import axios from 'axios'
 
 class Login extends React.Component{
@@ -46,10 +45,10 @@ class Login extends React.Component{
             'email':this.state.registeremail,
             'password':this.state.registerpassword
         }
-        fetch('http://localhost:5000/user/validity/'+this.state.registeremail).then(res=>res.json()).then(json=>{
+        fetch('https://noteskeperbackend.herokuapp.com/user/validity/'+this.state.registeremail).then(res=>res.json()).then(json=>{
             console.log(json)
             if(json.presence===false){
-                axios.post('http://localhost:5000/user',body).then(response=>{
+                axios.post('https://noteskeperbackend.herokuapp.com/user',body).then(response=>{
                     this.setState({
                         loginform:true,
                         registerusername:'',
@@ -83,7 +82,7 @@ class Login extends React.Component{
             'password':this.state.loginpassword
         }
         console.log(body)
-        axios.post('http://localhost:5000/user/login',body).then(response=>{
+        axios.post('https://noteskeperbackend.herokuapp.com/user/login',body).then(response=>{
             if(response.data.status==="passed"){
                 console.log('logged in')
                 this.props.onloggedin(response.data.email,response.data.name)

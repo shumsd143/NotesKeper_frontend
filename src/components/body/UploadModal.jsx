@@ -46,7 +46,7 @@ class UploadModal extends React.Component{
         if(this.state.imagevalue){
             const data= new FormData();
             data.append('file',this.state.imagevalue[0])
-            axios.post('http://localhost:5000/image/upload',data,{
+            axios.post('https://noteskeperbackend.herokuapp.com/image/upload',data,{
                 headers:{
                     'Content-Type':'multipart/form-data'
                 }
@@ -73,7 +73,7 @@ class UploadModal extends React.Component{
             }
         }
         console.log(allinfo)
-        axios.post('http://localhost:5000/user/data',allinfo).then(res=>{
+        axios.post('https://noteskeperbackend.herokuapp.com/user/data',allinfo).then(res=>{
             this.setState({
                 imageload:false,
                 linkvalue:'',
