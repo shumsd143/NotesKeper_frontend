@@ -1,0 +1,41 @@
+.Adjustbutton{
+    width:240px;
+    display: block;
+    margin: auto;
+    height:50px;
+    margin-top: 80px;
+    background-color: transparent;
+    border: 4px solid black;
+    outline: none;
+    border-radius: 25px;
+    color: black;
+}
+.Adjustbutton:hover{
+    background-color: black;
+    color: white;
+}
+.inputparent{
+    margin-top: 60px;
+    margin-left: 10%;
+    display: flex;
+    margin-bottom: 40px;
+    width: 80%;
+    height:50px;
+    background-color: #e8e9ea;
+    border: 1px solid #e8e9ea;
+    border-radius: 28px;
+}
+.inputer{
+    margin-left: 2%;
+    width:96%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    text-align: center;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.loader{
+    margin-left: 47%;
+    margin-right: auto;
+}

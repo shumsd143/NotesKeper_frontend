@@ -1,0 +1,35 @@
+.arrange{
+    display:flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    
+}
+.headnote{
+    align-items: center;
+    margin: auto;
+}
+.stylecheckbox{
+    position: fixed;
+    margin-top: -15px;
+    margin-left: -10px;
+    width: 30px;
+    height: 30px;
+}
+.inputparent{
+    margin-top: 60px;
+    margin-left: 10%;
+    display: flex;
+    margin-bottom: 40px;
+    width: 80%;
+    height:50px;
+    background-color: #e8e9ea;
+    border: 1px solid #e8e9ea;
+    border-radius: 28px;
+}
+.inputer{
+    margin-left: 2%;
+    width:96%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    text-align: center;
+}
