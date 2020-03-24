@@ -12,7 +12,7 @@
     background-color: white;
 }
 .stylecheckbox{
-    position: fixed;
+    position: absolute;
     margin-top: -15px;
     margin-left: -10px;
     width: 30px;
